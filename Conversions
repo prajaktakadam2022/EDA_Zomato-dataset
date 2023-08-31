@@ -1,0 +1,458 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOB1up9q1zsV197ullShruu",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/prajaktakadam2022/EDA_Zomato-dataset/blob/main/Conversions\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z3zJdO7C0IX3",
+        "outputId": "62ff016b-726e-405b-f93b-c274d7618856"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Prajakta\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Variables : containers of data mostly for future use\n",
+        "# Statis v/s Dynamic typing\n",
+        "# Statis v/s Dynamic binding\n",
+        "# Stylish declaration techniques\n",
+        "\n",
+        "name = \"Prajakta\"\n",
+        "print(name)\n",
+        "\n",
+        "#name is variable to need not be in inverted commas else the print\n",
+        "# function will print name as name and not prajakta\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " a= 5 #numericals need not be in inverted commas\n",
+        " b =6\n",
+        " print(a+b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VzX3tiPO2lCz",
+        "outputId": "7ad98f76-505c-47e1-8e11-7e62d6e7abb1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "11\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Dynamic Typing : no need to tell the data type of variable to the python interpreter\n",
+        "a = 5\n",
+        "\n",
+        "# Static Tying : used in C /C++\n",
+        " # int a = 5\n",
+        "\n",
+        "#Dynamic binding : Variable can hold any datatype in the same program\n",
+        "a=5\n",
+        "print(a)\n",
+        "a=\"Prajakta\"\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-SNYY4Qd28gC",
+        "outputId": "4737df4e-d82b-49d7-ec12-1211c05775a3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "Prajakta\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#different methods to write\n",
+        "a=1\n",
+        "b=2\n",
+        "c=3\n",
+        "print(a,b,c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "15mxCkhF4ACb",
+        "outputId": "49cd705a-d521-4d22-d86d-feaceab3b69e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 2 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a,b,c=1,2,3\n",
+        "print(a,b,c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r05bHZrE3422",
+        "outputId": "2d70c87b-7e21-4391-e3fc-81fb2e2e168c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 2 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=b=c =5\n",
+        "print(a,b,c)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mvsdqP7FxMBe",
+        "outputId": "360efb07-0f96-48ed-bcb5-6a784e65724b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5 5 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#static software eg calender ,clock, blog, college website\n",
+        "#dynamic software eg user can interact youtube : where you can search, comment, zomato, uber\n",
+        "#dynamic takes user input\n",
+        "input()"
+      ],
+      "metadata": {
+        "id": "7Obd6DZ8xT9J",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        },
+        "outputId": "7473ed76-c8f2-4e62-accb-7d3396eeda26"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "input\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'input'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "input(\"Enter Name\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 53
+        },
+        "id": "XKtQ3cvQSuR6",
+        "outputId": "2e89821b-accf-47d4-f9e3-ea00b51ee8b1"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter Name Prajakta\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "' Prajakta'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#take input from users and store them in variable\n",
+        "fnum = input(\"enter first number\")\n",
+        "snum = input(\"enter second number\")\n",
+        "print(fnum,snum)\n",
+        "print(int(fnum) + int(snum))\n",
+        "print(type(fnum))\n",
+        "print(result)\n",
+        "#type of fnum will remain str and not int\n",
+        "#there will be no changes in old data\n",
+        "#creates a new value\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QeGeBri6TNil",
+        "outputId": "bbcb9fdf-5945-4d89-ef90-0032d6292a41"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter first number 56\n",
+            "enter second number 67\n",
+            " 56  67\n",
+            "123\n",
+            "<class 'str'>\n",
+            "fnumsnum\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "##Type Conversion\n",
+        "# Implicit & Explicit\n",
+        "print(5+5.6)\n",
+        "print(type(5), type(5.5))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NWuuu8Y0T8Ru",
+        "outputId": "f82cdcab-3158-438f-c8a2-2a4c980d4747"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10.6\n",
+            "<class 'int'> <class 'float'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print 4 + \"4\"\n",
+        "#int and string cannot be added\n",
+        "#no implicit conversion takes place\n",
+        "#so explicit conversion is requested to the interpreter"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 140
+        },
+        "id": "Rn39Cs7PVWHi",
+        "outputId": "21f1214a-586e-4035-a4e0-b29a2a4090ee"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-14-4656e059ad54>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    print 4 + \"4\"\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m Missing parentheses in call to 'print'. Did you mean print(...)?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#explicit\n",
+        "#str -> int\n",
+        "(int(\"4\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6DhlHgFiVs6_",
+        "outputId": "e9510a7a-3960-444c-b747-69e9a31e0964"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "str(\"5\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "bvYVBuNSWLym",
+        "outputId": "ff02e232-252e-4d58-90a4-e1e19fb0c2ec"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'5'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "float(4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SH01vP5eWRHq",
+        "outputId": "50382a19-8e86-44ca-86bd-118c14569244"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "UoXLLF-FWW1W"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
